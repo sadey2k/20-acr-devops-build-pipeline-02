@@ -44,6 +44,6 @@ stages:
         OverWrite: true
     - task: PublishBuildArtifacts@1
       inputs:
-        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        PathtoPublish: '$(Build.ArtifactsStagingDirectory)'
         ArtifactName: 'manifest'
         publishLocation: 'Container'
